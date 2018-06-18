@@ -12,6 +12,22 @@ void fizzBizz(int start, int end)
     printf("\nFizzBizz::START: %d, %d\n", start, end);
     
     // TODO: Your code here!
+    for ( ;start<=end;start= start+1){
+        if (start % 3 == 0){
+            printf("Fizz");
+            if (start%5==0){
+                    printf("Bizz");
+            }
+        }
+        else{
+            if(start % 5 == 0){
+                printf("Bizz");
+            }else{
+                printf("%d",start);
+            }
+        }
+        printf("\n");
+    }
     // Ex.: printf("Fizz\n");
     
     printf("\nFizzBizz::END\n");
